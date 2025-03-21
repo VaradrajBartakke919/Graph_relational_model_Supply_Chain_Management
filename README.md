@@ -62,12 +62,12 @@ Download the required datasets:
 4. Import data from csv files of our dataset
 
 Import into our base tables corresponding to the csv files of downloaded FAOSTAT dataset:
-`production_cle_area_code`: From Production_America --> Production_Crops_Livestock_E_Americas --> ......Area_Codes.csv
-`production_cle_item_code`: From Production_America --> Production_Crops_Livestock_E_Americas --> ......item_codes.csv
-`production_cle_elements`: From all (Production, Food_Balances, Trade, Price)--> ....elements.csv files 
-`food_balances_cle`: From Food_Balaces_America --> SUA_Crops_Livestock_E_Americas --> SUA_Crops_Livestock_E_Americas.csv
-`price_cle`: From Prices_America --> Prices_E_Americas --> Prices_E_Americas.csv
-`trade_cle_trade_matrix`: From Trade_America --> Trade_DetailedTradeMatrix_E_Americas --> Trade_DetailedTradeMatrix_E_Americas.csv
+- `production_cle_area_code`: From Production_America --> Production_Crops_Livestock_E_Americas --> ......Area_Codes.csv
+- `production_cle_item_code`: From Production_America --> Production_Crops_Livestock_E_Americas --> ......item_codes.csv
+- `production_cle_elements`: From all (Production, Food_Balances, Trade, Price)--> ....elements.csv files 
+- `food_balances_cle`: From Food_Balaces_America --> SUA_Crops_Livestock_E_Americas --> SUA_Crops_Livestock_E_Americas.csv
+- `price_cle`: From Prices_America --> Prices_E_Americas --> Prices_E_Americas.csv
+- `trade_cle_trade_matrix`: From Trade_America --> Trade_DetailedTradeMatrix_E_Americas --> Trade_DetailedTradeMatrix_E_Americas.csv
 
    
 ### **3️⃣ Data Preprocessing**
