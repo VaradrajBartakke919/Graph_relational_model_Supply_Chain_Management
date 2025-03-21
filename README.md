@@ -13,16 +13,35 @@ Before proceeding, ensure that the following software is installed:
 
 ## 🛠 Step-by-Step Implementation
 ### **1️⃣ Dataset Collection**
-1. Download the datasets from [FAOSTAT](https://www.fao.org/faostat/en/#data).
-2. Save the downloaded CSV files inside the `/CSVs` folder.
+We sourced the data from [FAOSTAT](https://www.fao.org/faostat/en/#data). We have considered only American continent dataset for our model.
+To save some effort we have already provided the final csv files (food_balances,csv, trades.csv & prices.csv) in the CSV folder.
+You can directly use the final structured csv files to load data into Neo4j skipping the RDBMS part.
+
+However, if required these are the steps explaining our process from Data Collection, Data Pre-processing to CSV creation.
+
+(Optional) 
+Download the required datasets:
+   a. Production --> Crops & livestock product --> Download (Americas) dataset
+   b. Food Balances --> Supply Utilization Accounts (2010-) --> Download (Americas) dataset
+   c. Trade --> Detailed Trade Matrix --> Download (Americas) dataset
+   d. Prices --> Producer Prices --> Download (Americas) dataset
 
 ### **2️⃣ Database Setup**
 1. Navigate to the `/DDL` folder in this repository.
 2. Execute the DDL scripts in PostgreSQL to create necessary tables:
-   - `prices`
-   - `trades`
+   - `production_cle_area_code`
+   - `production_cle_item_code`
+   - `production_cle_elements`
+   - `food_balances_cle`
+   - `prices_cle`
+   - `trade_cle_trade_matrix`
+   - `area_codes`
+   - `item_codes`
+   - `element_codes`
    - `food_balances`
-   - Lookup tables: `area_codes`, `item_codes`, `element_codes`
+   - `trades`
+   - `prices`
+     
 3. Example table creation (available in `/DDL` folder):
    ```sql
    CREATE TABLE prices (
@@ -40,8 +59,17 @@ Before proceeding, ensure that the following software is installed:
        PRIMARY KEY (area_code, item_code, element_code)
    );
    ```
-4. Execute all SQL scripts from the `/DDL` folder.
+4. Import data from csv files of our dataset
 
+Import into our base tables corresponding to the csv files of downloaded FAOSTAT dataset:
+`production_cle_area_code`: From Production_America --> Production_Crops_Livestock_E_Americas --> ......Area_Codes.csv
+`production_cle_item_code`: From Production_America --> Production_Crops_Livestock_E_Americas --> ......item_codes.csv
+`production_cle_elements`: From all (Production, Food_Balances, Trade, Price)--> ....elements.csv files 
+`food_balances_cle`: From Food_Balaces_America --> SUA_Crops_Livestock_E_Americas --> SUA_Crops_Livestock_E_Americas.csv
+`price_cle`: From Prices_America --> Prices_E_Americas --> Prices_E_Americas.csv
+`trade_cle_trade_matrix`: From Trade_America --> Trade_DetailedTradeMatrix_E_Americas --> Trade_DetailedTradeMatrix_E_Americas.csv
+
+   
 ### **3️⃣ Data Preprocessing**
 1. Navigate to `/INSERT SCRIPTS` folder for preprocessing SQL scripts.
 2. Run the scripts in PostgreSQL to clean and normalize the dataset.
