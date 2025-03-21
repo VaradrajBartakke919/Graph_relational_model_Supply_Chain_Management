@@ -3,7 +3,7 @@
 ## 📌 Project Overview
 This project integrates **PostgreSQL (RDBMS) and Neo4j (GDBMS)** to analyze **inventory management and trade relationships**. The workflow involves **data preprocessing, database design, data import, query execution, and visualization using NeoDash**.
 
-## 🚀 Prerequisites
+## 🚀 Prerequisites:
 Before proceeding, ensure that the following software is installed:
 - **PostgreSQL** – for structured database storage.
 - **Neo4j** – for graph-based relationship analysis.
