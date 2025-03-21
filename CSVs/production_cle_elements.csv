@@ -1,0 +1,107 @@
+element_code,element
+55,Gross Production Value (constant 2014-2016 thousand SLC)
+56,Gross Production Value (current thousand SLC)
+57,Gross Production Value (current thousand US$)
+58,Gross Production Value (constant 2014-2016 thousand US$)
+64,Import Value Base Period Quantity
+65,Import Value Base Period Price
+94,Export Value Base Quantity
+95,Export Value Base Price
+152,Gross Production Value (constant 2014-2016 thousand I$)
+261,Calories/Year
+271,Proteins/Year
+281,Fats/Year
+432,Gross Production Index Number (2014-2016 = 100)
+434,Gross per capita Production Index Number (2014-2016 = 100)
+462,Import Value Index (2014-2016 = 100)
+464,Import Unit/Value Index (2014-2016 = 100)
+465,Import Quantity Index (2014-2016 = 100)
+492,Export Value Index (2014-2016 = 100)
+494,Export Unit/Value Index (2014-2016 = 100)
+495,Export Quantity Index (2014-2016 = 100)
+511,Total Population - Both sexes
+664,Food supply (kcal/capita/day)
+665,Food supply quantity (g/capita/day)
+674,Protein supply quantity (g/capita/day)
+684,Fat supply quantity (g/capita/day)
+1050,Nutritive Elements
+5016,Loss
+5023,Processed
+5071,Stock Variation
+5111,Stocks
+5112,Stocks
+5113,Opening stocks
+5114,Stocks
+5141,Food supply quantity (tonnes)
+5164,Tourist consumption
+5165,Other uses (non-food)
+5166,Residuals
+5312,Area harvested
+5313,Laying
+5314,Prod Popultn
+5318,Milk Animals
+5319,Prod Popultn
+5320,Producing Animals/Slaughtered
+5321,Producing Animals/Slaughtered
+5322,Production
+5323,Production
+5412,Yield
+5413,Yield
+5417,Yield/Carcass Weight
+5422,Yield
+5423,Extraction Rate
+5424,Yield/Carcass Weight
+5510,Production
+5513,Production
+5520,Feed
+5525,Seed
+5530,Producer Price (LCU/tonne)
+5531,Producer Price (SLC/tonne)
+5532,Producer Price (USD/tonne)
+5539,Producer Price Index (2014-2016 = 100)
+5607,Import quantity
+5608,Import quantity
+5609,Import quantity
+5610,Import quantity
+5622,Import value
+5907,Export quantity
+5908,Export quantity
+5909,Export quantity
+5910,Export quantity
+5922,Export value
+6121,Value
+6125,Value
+50000,Import
+50002,Energy content of imports (kcal/capita/day)
+50003,Protein content of imports (g/capita/day)
+50004,Fat content of imports (g/capita/day)
+50005,Carbohydrate; available; content of imports (g/capita/day)
+50006,Dietary fibre content of imports (g/capita/day)
+50008,Calcium content of imports (mg/capita/day)
+50009,Iron content of imports (mg/capita/day)
+50010,Magnesium content of imports (mg/capita/day)
+50011,Phosphorus content of imports (mg/capita/day)
+50012,Potassium content of imports (mg/capita/day)
+50014,Zinc content of imports (mg/capita/day)
+50016,Vitamin A (RE) content of imports (mcg/capita/day)
+50017,Vitamin A (RAE) content of imports (mcg/capita/day)
+50020,Thiamin content of imports (mg/capita/day)
+50021,Riboflavin content of imports (mg/capita/day)
+50028,Vitamin C content of imports (mg/capita/day)
+66000,Export
+66002,Energy content of exports (kcal/capita/day)
+66003,Protein content of exports (g/capita/day)
+66004,Fat content of exports (g/capita/day)
+66005,Carbohydrate; available; content of exports (g/capita/day)
+66006,Dietary fibre content of exports (g/capita/day)
+66008,Calcium content of exports (mg/capita/day)
+66009,Iron content of exports (mg/capita/day)
+66010,Magnesium content of exports (mg/capita/day)
+66011,Phosphorus content of exports (mg/capita/day)
+66012,Potassium content of exports (mg/capita/day)
+66014,Zinc content of exports (mg/capita/day)
+66016,Vitamin A (RE) content of exports (mcg/capita/day)
+66017,Vitamin A (RAE) content of exports (mcg/capita/day)
+66020,Thiamin content of exports (mg/capita/day)
+66021,Riboflavin content of exports (mg/capita/day)
+66028,Vitamin C content of exports (mg/capita/day)
