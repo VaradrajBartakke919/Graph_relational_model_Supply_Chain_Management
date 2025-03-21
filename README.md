@@ -1,4 +1,4 @@
-# Inventory Management Analysis: Data Integration with PostgreSQL & Neo4j
+# Relational and Graph Database Integration for Advanced Supply Chain Analytics
 
 ## 📌 Project Overview
 This project integrates **PostgreSQL (RDBMS) and Neo4j (GDBMS)** to analyze **inventory management and trade relationships**. The workflow involves **data preprocessing, database design, data import, query execution, and visualization using NeoDash**.
