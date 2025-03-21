@@ -22,9 +22,9 @@ However, if required these are the steps explaining our process from Data Collec
 (Optional) 
 Download the required datasets:
    - Production --> Crops & livestock product --> Download [Americas](https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_Americas.zip) dataset
-   - Food Balances --> Supply Utilization Accounts (2010-) --> Download (Americas) dataset
-   - Trade --> Detailed Trade Matrix --> Download (Americas) dataset
-   - Prices --> Producer Prices --> Download (Americas) dataset
+   - Food Balances --> Supply Utilization Accounts (2010-) --> Download [Americas](https://bulks-faostat.fao.org/production/SUA_Crops_Livestock_E_Americas.zip) dataset
+   - Trade --> Detailed Trade Matrix --> Download [Americas](https://bulks-faostat.fao.org/production/Trade_DetailedTradeMatrix_E_Americas.zip) dataset
+   - Prices --> Producer Prices --> Download [Americas](https://bulks-faostat.fao.org/production/Prices_E_Americas.zip) dataset
 
 ### **2️⃣ Database Setup**
 1. Navigate to the `/DDL` folder in this repository.
