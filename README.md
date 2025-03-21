@@ -126,5 +126,5 @@ This project demonstrates how **relational and graph databases** can be used tog
 - **Shreyasi Nath**
 - **Varadraj Bartakke**
 
-For any questions or contributions, feel free to **raise an issue** or **submit a pull request**!
+For any questions or contributions, feel free to **raise an issue** or **submit a pull request**.
 
