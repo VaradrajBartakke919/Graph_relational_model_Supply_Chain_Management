@@ -7,7 +7,6 @@ This project integrates **PostgreSQL (RDBMS) and Neo4j (GDBMS)** to analyze **in
 Before proceeding, ensure that the following software is installed:
 - **PostgreSQL** – for structured database storage.
 - **Neo4j** – for graph-based relationship analysis.
-- **Python** – for preprocessing and scripting.
 - **NeoDash** – for dashboard visualization.
 
 ---
