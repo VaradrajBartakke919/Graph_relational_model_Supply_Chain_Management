@@ -21,10 +21,10 @@ However, if required these are the steps explaining our process from Data Collec
 
 (Optional) 
 Download the required datasets:
-   a. Production --> Crops & livestock product --> Download (Americas) dataset
-   b. Food Balances --> Supply Utilization Accounts (2010-) --> Download (Americas) dataset
-   c. Trade --> Detailed Trade Matrix --> Download (Americas) dataset
-   d. Prices --> Producer Prices --> Download (Americas) dataset
+   - Production --> Crops & livestock product --> Download (Americas) dataset
+   - Food Balances --> Supply Utilization Accounts (2010-) --> Download (Americas) dataset
+   - Trade --> Detailed Trade Matrix --> Download (Americas) dataset
+   - Prices --> Producer Prices --> Download (Americas) dataset
 
 ### **2️⃣ Database Setup**
 1. Navigate to the `/DDL` folder in this repository.
