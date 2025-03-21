@@ -98,19 +98,18 @@ The dataset is refined by selecting key features:
 ###### We have provideed these three csv files in CSV folder.
 
 ### **6️⃣ Data Import into Neo4j**
-1. Navigate to `/Neo4j` folder for import queries.
-2. Open the Neo4j browser and execute the import scripts.
+1. Navigate to `/Cypher Queries` folder for import queries.
+2. Execute the cypher queries from `Graph_model_creation_cypher_queries.txt` file.
 3. Example command:
    ```cypher
    LOAD CSV WITH HEADERS FROM 'file:///CSVs/trade.csv' AS row
    MERGE (c:Country {name: row.reporter_area});
    MERGE (p:FoodProduct {name: row.item});
    ```
-4. Repeat for all files.
 
 ### **7️⃣ Executing Queries**
-1. Navigate to `/Cypher Queries` folder for analytical queries.
-2. Execute graph queries in Neo4j to analyze trade patterns.
+1. Navigate to `/Cypher Queries/Neo4j` folder for analytical queries.
+2. Execute graph queries in Neo4j to analyze trade patterns and visualize the graph.
 
 #### **Example Queries:**
 
@@ -130,7 +129,7 @@ ORDER BY o.value DESC;
 ```
 
 ### **8️⃣ Building NeoDash Dashboard**
-1. Navigate to `/Dashboard(Neodash)` folder for configuration files.
+1. Navigate to `/Cypher Queries/Dashboard(Neodash)` folder for configuration files.
 2. Install NeoDash using:
    ```bash
    npm install -g neodash
