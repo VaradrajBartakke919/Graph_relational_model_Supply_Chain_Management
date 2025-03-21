@@ -27,7 +27,7 @@ Download the required datasets:
    - Prices --> Producer Prices --> Download [Americas](https://bulks-faostat.fao.org/production/Prices_E_Americas.zip) dataset
 
 ### **2️⃣ Database Setup**
-1. Navigate to the `/DDL` folder in this repository.
+1. Navigate to the `/DDL_scripts` folder in this repository.
 2. Execute the DDL scripts in PostgreSQL to create necessary tables:
    - `production_cle_area_code`
    - `production_cle_item_code`
