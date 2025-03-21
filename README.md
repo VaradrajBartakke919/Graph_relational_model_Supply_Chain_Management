@@ -14,8 +14,8 @@ Before proceeding, ensure that the following software is installed:
 ## 🛠 Step-by-Step Implementation
 ### **1️⃣ Dataset Collection**
 We sourced the data from [FAOSTAT](https://www.fao.org/faostat/en/#data). We have considered only American continent dataset for our model.
-###### To save some effort we have already provided the final csv files (food_balances,csv, trades.csv & prices.csv) in the CSV folder.
-###### You can directly use the final structured csv files to load data into Neo4j skipping the RDBMS part.
+#### To save some effort we have already provided the final csv files (food_balances,csv, trades.csv & prices.csv) in the CSV folder.
+#### You can directly use the final structured csv files to load data into Neo4j skipping the RDBMS part.
 
 However, if required these are the steps explaining our process from Data Collection, Data Pre-processing to CSV creation.
 
