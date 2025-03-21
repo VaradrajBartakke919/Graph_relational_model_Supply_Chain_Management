@@ -1,0 +1,18 @@
+area_code,area,item_code,item,element,element_code,unit,year_2020,year_2021,year_2022,year_2023
+21,Brazil,515,Apples,Producer Price (USD/tonne),5532,USD,341.1,334.4,365.3,430.4
+21,Brazil,75,Oats,Producer Price (USD/tonne),5532,USD,132.2,177.2,220.9,220.9
+21,Brazil,15,Wheat,Producer Price (USD/tonne),5532,USD,207.1,258.9,293.9,293.9
+33,Canada,515,Apples,Producer Price (USD/tonne),5532,USD,490.1,544.5,562.9,578.5
+33,Canada,75,Oats,Producer Price (USD/tonne),5532,USD,161,220.9,345.9,223.6
+33,Canada,373,Spinach,Producer Price (USD/tonne),5532,USD,1879.6,1905.8,2009,2058.4
+33,Canada,15,Wheat,Producer Price (USD/tonne),5532,USD,181.9,256.9,341.5,292.2
+58,Ecuador,515,Apples,Producer Price (USD/tonne),5532,USD,1052,1052,1052,588
+58,Ecuador,75,Oats,Producer Price (USD/tonne),5532,USD,491.6,491.6,491.6,491.6
+58,Ecuador,15,Wheat,Producer Price (USD/tonne),5532,USD,436.5,424,512.1,610.2
+231,United States of America,515,Apples,Producer Price (USD/tonne),5532,USD,846.6,815.7,917.1,762.8
+231,United States of America,75,Oats,Producer Price (USD/tonne),5532,USD,175,259.4,314.5,239.9
+231,United States of America,373,Spinach,Producer Price (USD/tonne),5532,USD,1338,1576.3,1472.7,1728.4
+231,United States of America,15,Wheat,Producer Price (USD/tonne),5532,USD,184,268.2,330.7,264.6
+234,Uruguay,515,Apples,Producer Price (USD/tonne),5532,USD,1325.8,966.6,889,1625.4
+234,Uruguay,75,Oats,Producer Price (USD/tonne),5532,USD,333.2,333.2,333.2,333.2
+234,Uruguay,15,Wheat,Producer Price (USD/tonne),5532,USD,208,250.9,313.4,324.5
