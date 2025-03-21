@@ -71,18 +71,21 @@ Import into our base tables corresponding to the csv files of downloaded FAOSTAT
 
    
 ### **3️⃣ Data Preprocessing**
-1. Navigate to `/INSERT SCRIPTS` folder for preprocessing SQL scripts.
-2. Run the scripts in PostgreSQL to clean and normalize the dataset.
+1. Navigate to `/SCRIPTS` folder for preprocessing SQL scripts.
+2. Run the script in order of the queries present in it in PostgreSQL to clean and normalize the dataset.
 3. This step involves:
    - Handling missing values.
    - Standardizing units.
    - Transforming time-series data into structured format.
 
-### **4️⃣ Feature Selection**
+### **4️⃣ Feature Selection & Inserting data**
 The dataset is refined by selecting key features:
 - **Items:** `Apples, Oats, Spinach, Chickens, Wheat`
 - **Elements:** `Import quantity, Import value, Export quantity, Export value, Production, Food supply quantity (tonnes), Producer Price (USD/tonne)`
 - **Countries:** `United States of America, Ecuador, Uruguay, Canada, Brazil`
+  
+1. Navigate to `/INSERT_SCRIPTS` folder for preprocessing SQL scripts.
+2. Execute the scripts in order in PostgreSQL
 
 ### **5️⃣ Exporting Processed Data**
 1. Export the final structured dataset as CSVs and save them in `/CSVs`.
@@ -92,6 +95,7 @@ The dataset is refined by selecting key features:
    COPY (SELECT * FROM trades) TO '/path/to/CSVs/trade.csv' CSV HEADER;
    COPY (SELECT * FROM prices) TO '/path/to/CSVs/price_cle.csv' CSV HEADER;
    ```
+###### We have provideed these three csv files in CSV folder.
 
 ### **6️⃣ Data Import into Neo4j**
 1. Navigate to `/Neo4j` folder for import queries.
@@ -139,7 +143,8 @@ ORDER BY o.value DESC;
    - **Graph Visualizations** for trade relationships.
    - **Bar/Pie Charts** for country-wise production.
    - **Filters** for interactive exploration.
-
+   - 
+###### Use the .json file to import our dashboard entirely into NeoDash
 ---
 
 
