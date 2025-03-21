@@ -1,0 +1,88 @@
+Verification
+
+1.⁠ ⁠Check Year Nodes:
+
+MATCH (y:Year)
+RETURN y.year
+ORDER BY y.year;
+
+2.⁠ ⁠Check Reified Structure:
+
+MATCH (c:Country)-[:HAS_TRADE_LINK]->(tl:TradeLink)-[:FOR_PRODUCT]->(p:FoodProduct)
+MATCH (tl)-[:HAS_OBSERVATION]->(o:Observation)-[:OBSERVED_IN]->(y:Year)
+RETURN c.name, p.name, o.type, o.value, y.year
+LIMIT 20;
+
+3.⁠ ⁠Check Exports (if loaded):
+
+MATCH (c1:Country)-[r:TRADES]->(c2:Country)
+RETURN c1.name, c2.name, r.product_name, r.export_2023
+LIMIT 10;
+
+
+Visualizing the Graph Model
+
+1.⁠ ⁠Visualize the Entire Graph
+
+MATCH (n)-[r]->(m)
+RETURN n, r, m
+LIMIT 50;
+ 
+2.⁠ ⁠Visualize the Full Supply Chain Structure
+
+MATCH (c:Country)-[:HAS_TRADE_LINK]->(tl:TradeLink)-[:FOR_PRODUCT]->(p:FoodProduct)
+MATCH (tl)-[:HAS_OBSERVATION]->(o:Observation)-[:OBSERVED_IN]->(y:Year)
+RETURN c, tl, p, o, y
+LIMIT 50;
+ 
+Supply Chain Analytics Use Cases
+
+MATCH (c:Country {name:"Brazil"})-[:HAS_TRADE_LINK]->(tl:TradeLink)-[:FOR_PRODUCT]->(p:FoodProduct {name:"Wheat"})
+MATCH (tl)-[:HAS_OBSERVATION]->(o:Observation {type:"production"})-[:OBSERVED_IN]->(y:Year)
+RETURN y.year AS Year, o.value AS Production
+ORDER BY y.year;
+ 
+2.⁠ ⁠Compare Production and Consumption for Wheat in Brazil
+
+MATCH (c:Country {name:"Brazil"})-[:HAS_TRADE_LINK]->(tl:TradeLink)-[:FOR_PRODUCT]->(p:FoodProduct {name:"Wheat"})
+MATCH (tl)-[:HAS_OBSERVATION]->(o:Observation)-[:OBSERVED_IN]->(y:Year)
+WHERE o.type IN ["production", "consumption"]
+RETURN y.year AS Year, o.type AS Metric, o.value AS Value
+ORDER BY y.year, o.type;
+ 
+3.⁠ ⁠Calculate Loss Percentage for Oats in Canada
+
+MATCH (c:Country {name:"Canada"})-[:HAS_TRADE_LINK]->(tl:TradeLink)-[:FOR_PRODUCT]->(p:FoodProduct {name:"Oats"})
+MATCH (tl)-[:HAS_OBSERVATION]->(op:Observation {type:"production"})-[:OBSERVED_IN]->(y:Year)
+MATCH (tl)-[:HAS_OBSERVATION]->(ol:Observation {type:"loss"})-[:OBSERVED_IN]->(y)
+WHERE op.value > 0
+RETURN y.year AS Year, op.value AS Production, ol.value AS Loss, (ol.value / op.value)*100 AS LossPercentage
+ORDER BY Year;
+ 
+4.⁠ ⁠Country-to-Country Export Flows for Wheat
+
+MATCH (exporter:Country {name:"Brazil"})-[r:TRADES]->(importer:Country)
+WHERE r.product_name = "Wheat" AND r.export_2023 IS NOT NULL
+RETURN exporter.name AS Exporter, importer.name AS Importer, r.export_2023 AS Export2023
+ORDER BY r.export_2023 DESC
+LIMIT 5;
+ 
+5.⁠ ⁠Multi-Hop Trade Routes
+
+MATCH path = (start:Country {name:"Brazil"})-[:TRADES*1..3]->(end:Country {name:"Canada"})
+RETURN path
+LIMIT 5;
+ 
+6.⁠ ⁠Dynamic Dashboard Query for a Selected Year
+
+MATCH (y:Year {year:2023})
+MATCH (tl:TradeLink)-[:HAS_OBSERVATION]->(o:Observation)-[:OBSERVED_IN]->(y)
+MATCH (tl)-[:FOR_PRODUCT]->(p:FoodProduct)
+MATCH (c:Country)-[:HAS_TRADE_LINK]->(tl)
+RETURN c.name AS Country, p.name AS Product, o.type AS Metric, o.value AS Value
+ORDER BY c.name, p.name, o.type;
+ 
+
+MATCH (n)-[r]->(m)
+RETURN n, r, m
+LIMIT 50;
