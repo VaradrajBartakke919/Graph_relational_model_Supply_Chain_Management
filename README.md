@@ -155,6 +155,10 @@ This project demonstrates how **relational and graph databases** can be used tog
 
 <img width="355" alt="Screenshot 2025-03-25 at 12 08 58 PM" src="https://github.com/user-attachments/assets/68e2d81d-7e88-4024-a95c-60d1d0ed883b" />
 
+##  Sample Graph Model
+
+<img width="1054" alt="Screenshot 2025-03-18 at 11 32 49 AM" src="https://github.com/user-attachments/assets/272f8340-2ade-425b-a561-95211fcc72ef" />
+
 ---
 
 ## 👥 Contributors
