@@ -150,6 +150,11 @@ ORDER BY o.value DESC;
 ## 🎯 Conclusion
 This project demonstrates how **relational and graph databases** can be used together for **supply chain and trade analytics**. PostgreSQL provides **structured storage**, while Neo4j visualizes **trade relationships**. The **NeoDash dashboard** enhances **data interpretation** with interactive visualizations.
 
+
+##  Sample Dashboard
+
+<img width="355" alt="Screenshot 2025-03-25 at 12 08 58 PM" src="https://github.com/user-attachments/assets/68e2d81d-7e88-4024-a95c-60d1d0ed883b" />
+
 ---
 
 ## 👥 Contributors
